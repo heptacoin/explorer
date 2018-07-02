@@ -1,24 +1,13 @@
-Iquidus Explorer - 1.6.1
-================
+Heptacoin Explorer - 1.6.1
+==========================
 
-An open source block explorer written in node.js.
-
-### See it in action
-
-*  [Jumbucks](http://explorer.getjumbucks.com)
-*  [Sphere](http://sphere.iquidus.io)
-*  [SAR](http://explorer.sarcoin.info)
-*  [Vanillacoin](https://blockchain.vanillacoin.net/)
-*  [Neoscoin](http://explorer.infernopool.com/)  
-*  [C2Chain](http://c2chain.info/)
-
-*Note: If you would like your instance mentioned here contact me*
+An open source block explorer written in node.js (based on Iquidus Explorer - 1.6.1).
 
 ### Requires
 
 *  node.js >= 0.10.28
 *  mongodb 2.6.x
-*  *coind
+*  heptacoind
 
 ### Create database
 
@@ -100,7 +89,7 @@ sync.js (located in scripts/) is used for updating the local databases. This scr
 
 ### Wallet
 
-Iquidus Explorer is intended to be generic, so it can be used with any wallet following the usual standards. The wallet must be running with atleast the following flags
+Heptacoin Explorer is intended to be generic, so it can be used with any wallet following the usual standards. The wallet must be running with atleast the following flags
 
     -daemon -txindex
 
