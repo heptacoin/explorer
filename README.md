@@ -12,7 +12,7 @@ An open source block explorer written in node.js.
 *  [Neoscoin](http://explorer.infernopool.com/)  
 *  [C2Chain](http://c2chain.info/)
 
-*note: If you would like your instance mentioned here contact me*
+*Note: If you would like your instance mentioned here contact me*
 
 ### Requires
 
@@ -34,7 +34,7 @@ Create user with read/write access:
 
     > db.createUser( { user: "iquidus", pwd: "3xp!0reR", roles: [ "readWrite" ] } )
 
-*note: If you're using mongo shell 2.4.x, use the following to create your user:
+*Note: If you're using mongo shell 2.4.x, use the following to create your user:
 
     > db.addUser( { user: "username", pwd: "password", roles: [ "readWrite"] })
 
@@ -56,7 +56,7 @@ Create user with read/write access:
 
     npm start
 
-*note: mongod must be running to start the explorer*
+*Note: mongod must be running to start the explorer*
 
 As of version 1.4.0 the explorer defaults to cluster mode, forking an instance of its process to each cpu core. This results in increased performance and stability. Load balancing gets automatically taken care of and any instances that for some reason die, will be restarted automatically. For testing/development (or if you just wish to) a single instance can be launched with
 
@@ -81,7 +81,7 @@ sync.js (located in scripts/) is used for updating the local databases. This scr
     check        checks index for (and adds) any missing transactions/addresses
     reindex      Clears index then resyncs from genesis to current block
 
-    notes:
+    Notes:
     * 'current block' is the latest created block when script is executed.
     * The market database only supports (& defaults to) reindex mode.
     * If check mode finds missing data(ignoring new data since last sync),
@@ -133,7 +133,7 @@ To run sync.js with a larger stack size launch with
 
 Where [SIZE] is an integer higher than the default.
 
-*note: SIZE will depend on which blockchain you are using, you may need to play around a bit to find an optimal setting*
+*Note: SIZE will depend on which blockchain you are using, you may need to play around a bit to find an optimal setting*
 
 ### License
 
