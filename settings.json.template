@@ -5,15 +5,15 @@
 */
 {
   // name your instance!
-  "title": "IQUIDUS",
+  "title": "HEPTACOIN",
 
   "address": "127.0.0.1:3001",
 
   // coin name
-  "coin": "Darkcoin",
+  "coin": "Heptacoin",
 
   // coin symbol
-  "symbol": "DRK",
+  "symbol": "HEPTA",
 
   // logo
   "logo": "/images/logo.png",
@@ -26,7 +26,7 @@
   //     Cerulean, Cosmo, Cyborg, Darkly, Flatly, Journal, Lumen, Paper,
   //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
   // theme (see /public/themes for available themes)
-  "theme": "Cyborg",
+  "theme": "Yeti",
 
   // port to listen for requests on.
   "port" : 3001,
@@ -44,12 +44,12 @@
   "update_timeout": 10,
   "check_timeout": 250,
 
-  // wallet settings
+  // wallet settings: use port 19443 for testnet
   "wallet": {
     "host": "localhost",
-    "port": 9332,
-    "user": "darkcoinrpc",
-    "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "port": 9443,
+    "user": "rpcuser",
+    "pass": "rpcpassword"
   },
 
   // confirmations
@@ -64,7 +64,7 @@
     "markets": true,
     "richlist": true,
     "twitter": true,
-    "facebook": false,
+    "facebook": true,
     "googleplus": false,
     "search": true,
     "movement": true,
@@ -115,13 +115,13 @@
   },
 
   // twitter, facebook, googleplus
-  "twitter": "iquidus",
-  "facebook": "yourfacebookpage",
+  "twitter": "heptacoin",
+  "facebook": "heptacoin",
   "googleplus": "yourgooglepluspage",
 
   //genesis
-  "genesis_tx": "65f705d2f385dc85763a317b3ec000063003d6b039546af5d8195a5ec27ae410",
-  "genesis_block": "b2926a56ca64e0cd2430347e383f63ad7092f406088b9b86d6d68c2a34baef51",
+  "genesis_tx": "62d00e6e74f63b711d642480f60383434e015403fcb56533047e8c25c91472a0",
+  "genesis_block": "030903104fd768f705758cfec14c6457eed020091da8fe7cd103049200ef2507",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
@@ -147,7 +147,7 @@
 
   // nethash unitd: sets nethash API return units
   // valid options: "P" (PH/s), "T" (TH/s), "G" (GH/s), "M" (MH/s), "K" (KH/s)
-  "nethash_units": "G",
+  "nethash_units": "K",
 
   // Address labels
   // example : "JhbrvAmM7kNpwA6wD5KoAsbtikLWWMNPcM": {"label": "This is a burn address", "type":"danger", "url":"http://example.com"}
